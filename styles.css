@@ -27,10 +27,25 @@
     font-weight: 500;
     color: black;
   }
-  
-  .logo {
+
+  .nav-bar h2 {
     font-size: 1.25rem;
   }
+  
+  .logo {
+    display: inline-flex;
+    /* border: 1px solid red; */
+    align-items: center;
+  }
+
+  .logo .fa-brands {
+    padding: 0 1rem;
+  }
+
+  .nav-bar .logo {
+    
+  }
+
 
   /* MOBILE NAV */
 .mobile-nav {
@@ -54,7 +69,7 @@
 /*     border: 1px solid green; */
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (max-width: 1024px) {
     .logo {
         font-size: .8rem;
         transition: .2s ease-in;
@@ -72,7 +87,7 @@
 
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     .mobile-nav {
         display: none;
     }
@@ -119,7 +134,7 @@
   }
   
   .cta-button {
-    background-color: #4CAF50; /* Green color */
+    background-color: #0eb986; /* Green color */
     color: white;
     padding: 15px 30px;
     font-size: 1em;
