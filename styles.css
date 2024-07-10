@@ -32,6 +32,28 @@
     font-size: 1.25rem;
   }
 
+  /* MOBILE NAV */
+.mobile-nav {
+    background-color: whitesmoke;
+    padding: 2rem 1rem;
+/*     border: 1px solid blue; */
+}
+
+
+.mobile-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+/*     border: 1px solid red; */
+
+}
+
+  .mobile-nav li {
+    list-style: none;
+    padding: 0 2rem;
+/*     border: 1px solid green; */
+  }
+
   @media (max-width: 768px) {
     .logo {
         font-size: .8rem;
@@ -41,6 +63,18 @@
     .nav-bar {
         font-size: .8rem;
         padding: .5rem;
+        display: none;
+    }
+
+    .mobile-nav {
+       
+    }
+
+  }
+
+  @media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
     }
   }
 
