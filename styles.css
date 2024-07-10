@@ -28,6 +28,12 @@
     color: black;
   }
 
+  .nav-bar a:hover {
+    color: #0eb986;
+    border-bottom: 2px solid #0eb986;
+    transition: .1s ease-out;
+  }
+
   .nav-bar h2 {
     font-size: 1.25rem;
   }
