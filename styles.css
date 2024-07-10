@@ -8,6 +8,10 @@
     font-family: "Poppins", sans-serif;
   }
 
+  body {
+    background-color: black;
+  }
+
 /* NAV BAR */
   .nav-bar {
     display: flex;
@@ -106,7 +110,7 @@
     background-image: url(./Images/Hero-Banner.png); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 900px;
     width: 100%;
   }
   
@@ -182,6 +186,42 @@
       font-size: 0.8em;
     }
   }
+
+/*   ABOUT US SECTION    */
+
+.about-container {
+    
+    background-color: #0eb986;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.mission-history-team {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+.item {
+    display: block;
+    text-align: center;
+    line-height: 1.5rem;
+    /* border: 1px solid white; */
+    justify-items: center;
+    padding: 2rem 5rem;
+}
+
+.item h3,p {
+    margin-top: .8rem;
+
+}
+
+
 
 
 
