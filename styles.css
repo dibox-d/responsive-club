@@ -103,10 +103,10 @@
 
   .hero-banner {
     position: relative;
-    background-image: url(./Images/Hero-Banner.jpeg); /* Replace with your image path */
+    background-image: url(./Images/Hero-Banner.png); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    height: 800px; /* Full viewport height */
+    height: 800px;
     width: 100%;
   }
   
