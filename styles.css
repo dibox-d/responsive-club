@@ -19,6 +19,9 @@
     justify-content: space-between;
     padding: 1rem 3rem;
     background-color: whitesmoke;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
   }
 
   .nav-bar li {
@@ -61,6 +64,9 @@
 .mobile-nav {
     background-color: whitesmoke;
     padding: 2rem 1rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 /*     border: 1px solid blue; */
 }
 
@@ -285,4 +291,12 @@
     /* border: 1px solid pink; */
     /* line-height: .5rem; */
 }
+
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
