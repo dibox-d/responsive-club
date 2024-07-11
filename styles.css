@@ -223,7 +223,8 @@
 .about-container {
     display: grid;
     grid-template-columns: 40% 60%;
-    background-color: #23906F;
+    /* background-color: #23906F; */
+    background-image: url(./Images/bacgkround-about-us\ 2.jpg);
     height: auto;
    
 }
@@ -259,7 +260,8 @@
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    margin: 3rem;
+    padding: .5rem 1rem;
+    
 } 
 
 .team-member {
@@ -267,19 +269,18 @@
     border: 1px solid aqua;
     display: flex;
     align-items: center;
-    margin-left: ;
 
 }
 
 .team-member img {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 100%;
+    margin: 1rem;
 }
 
 .team-text {
     border: 1px solid pink;
-    line-height: .5rem;
-
+    /* line-height: .5rem; */
 }
 
