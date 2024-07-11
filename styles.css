@@ -154,7 +154,7 @@
   }
   
   .cta-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #23906F; /* Darker green on hover */
   }
   
   @media (max-width: 768px) {
@@ -224,6 +224,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     background-color: #23906F;
+    height: auto;
    
 }
 
@@ -249,4 +250,36 @@
 
 .right-side {
     background-color: whitesmoke;
+    border: 2px solid rgb(187, 255, 0);
 }
+
+.team {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin: 3rem;
+} 
+
+.team-member {
+    height: auto;
+    border: 1px solid aqua;
+    display: flex;
+    align-items: center;
+    margin-left: ;
+
+}
+
+.team-member img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+
+.team-text {
+    border: 1px solid pink;
+    line-height: .5rem;
+
+}
+
