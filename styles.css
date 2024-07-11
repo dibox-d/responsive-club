@@ -222,7 +222,7 @@
 
 .about-container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     /* background-color: #23906F; */
     background-image: url(./Images/bacgkround-about-us\ 2.jpg);
     height: auto;
@@ -232,8 +232,9 @@
 .left-side {
     display: flex;
     flex-direction: column;
+    justify-content: center;
    align-items: center;
-    border: 1px solid red;
+ /*    border: 1px solid red; */
     color: white;
 }
 
@@ -242,7 +243,7 @@
     text-align: center;
     margin: 3rem;
     width: 70%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .item h3,p {
@@ -251,22 +252,22 @@
 
 .right-side {
     background-color: whitesmoke;
-    border: 2px solid rgb(187, 255, 0);
+   /*  border: 2px solid rgb(187, 255, 0); */
 }
 
 .team {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    padding: .5rem 1rem;
+    padding: 3rem 3rem 1rem 3rem;
     
 } 
 
 .team-member {
     height: auto;
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
     display: flex;
     align-items: center;
 
@@ -277,10 +278,11 @@
     height: 8rem;
     border-radius: 100%;
     margin: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .team-text {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     /* line-height: .5rem; */
 }
 
