@@ -317,23 +317,19 @@
 .events-container {
   background-color: white;
   width: 100%;
-  height: auto;
-  text-align: center;
-  
+  height: 53rem;
+  text-align: center;  
 }
-
 
 .cards-container {
   display: flex;
   justify-content: space-around;
-  margin: 3rem;
+  margin: 4rem;
   width: auto;
   height: auto;
-
- 
 }
 
-.events-container h2 {
+.events-container > h2 {
   font-size: 2rem;
   margin-top: 3rem;
 
@@ -347,7 +343,6 @@
   height: auto;
   border-radius: 20px;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
 }
 
 .cards img {
@@ -373,7 +368,7 @@
   color: white;
   background-color: rgb(14, 185, 134, .8);
   border-radius: 20px 0px 20px 0px;
-  padding: 5px 20px;
+  padding: 10px 30px;
 }
 
 .cards button {
@@ -384,7 +379,7 @@
   padding: 10px 30px;
   font-size: 1.1rem;
   font-weight: 900;
-  margin: 20px auto;
+  margin-bottom: 2rem;
 
 }
 
