@@ -9,7 +9,7 @@
   }
 
   body {
-    background-color: white;
+    background-color: whitesmoke;
   }
 
 /* NAV BAR */
@@ -259,7 +259,7 @@
 }
 
 .right-side {
-    background-color: whitesmoke;
+    background-color: white;
    /*  border: 2px solid rgb(187, 255, 0); */
 }
 
@@ -275,7 +275,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    padding: 3rem 3rem 1rem 3rem;
+    padding: 1rem 3rem 1rem 3rem;
     
 } 
 
@@ -315,7 +315,7 @@
 /* EVENTS SECTION */
 
 .events-container {
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   height: 53rem;
   text-align: center;  
@@ -325,8 +325,7 @@
   display: flex;
   justify-content: space-around;
   margin: 4rem;
-  width: auto;
-  height: auto;
+  flex: 1 1 0;
 }
 
 .events-container > h2 {
@@ -336,13 +335,21 @@
 }
 
 .cards {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
-  background-color: whitesmoke;
-  width: 25%;
+  background-color: white;
+  width: 22%;
   height: auto;
   border-radius: 20px;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-sizing: border-box;
+}
+
+.cards:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease;
 }
 
 .cards img {
@@ -358,7 +365,7 @@
 }
 
 .cards p {
-  height: 10rem;
+  height: auto;
   padding: 0 20px;
   padding-bottom: 20px;
 }
@@ -379,15 +386,15 @@
   padding: 10px 30px;
   font-size: 1.1rem;
   font-weight: 900;
-  margin-bottom: 2rem;
+  margin: 2rem 3rem;
+  
 
 }
 
 button:hover {
   background-color: #23906F;
-  transition: .3s ease-in;
+  transition: .2s ease-in;
 }
-
 
 
 
