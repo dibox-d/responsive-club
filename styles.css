@@ -9,7 +9,7 @@
   }
 
   body {
-    background-color: black;
+    background-color: white;
   }
 
 /* NAV BAR */
@@ -226,6 +226,8 @@
 
 } */
 
+/* ABOUT US SECTION */
+
 .about-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -261,6 +263,12 @@
    /*  border: 2px solid rgb(187, 255, 0); */
 }
 
+.right-side h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .team {
     /* border: 1px solid blue; */
     display: flex;
@@ -284,7 +292,7 @@
     height: 8rem;
     border-radius: 100%;
     margin: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .team-text {
@@ -297,6 +305,100 @@
   .about-container {
     grid-template-columns: 1fr;
   }
+
+  .team-member img {
+    width: 6rem;
+    height: 6rem;
+  }
 }
+
+/* EVENTS SECTION */
+
+.events-container {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem;
+  width: auto;
+  height: auto;
+
+ 
+}
+
+.events-container h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+
+}
+
+.cards {
+  display: block;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 25%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.cards h1,h3,h4 {
+  margin-top: 1rem;
+  padding-top: 10px;
+  padding: 0 20px;
+}
+
+.cards p {
+  height: 10rem;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+.cards h2 {
+  position: absolute;
+  color: white;
+  background-color: rgb(14, 185, 134, .8);
+  border-radius: 20px 0px 20px 0px;
+  padding: 5px 20px;
+}
+
+.cards button {
+  background-color: #0eb986;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 20px auto;
+
+}
+
+button:hover {
+  background-color: #23906F;
+  transition: .3s ease-in;
+}
+
+
+
+
+
+
+
+
 
 
