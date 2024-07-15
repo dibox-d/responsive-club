@@ -10,6 +10,7 @@
 
   body {
     background-color: whitesmoke;
+    height: auto;
   }
 
 /* NAV BAR */
@@ -317,34 +318,34 @@
 .events-container {
   background-color: whitesmoke;
   width: 100%;
-  height: 53rem;
-  text-align: center;  
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .cards-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 4rem;
-  flex: 1 1 0;
+  margin: 0 2rem;
 }
 
 .events-container > h2 {
   font-size: 2rem;
-  margin-top: 3rem;
-
+  margin-top: 2rem;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: center;
   background-color: white;
   width: 22%;
-  height: auto;
+  margin: 1rem 0;
   border-radius: 20px;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   box-sizing: border-box;
+  overflow: hidden; /* Ensure no overflow from the image */
 }
 
 .cards:hover {
@@ -356,24 +357,27 @@
   width: 100%;
   height: auto;
   border-radius: 20px 20px 0px 0px;
+  object-fit: cover; /* Ensures the image covers the container */
 }
 
-.cards h1,h3,h4 {
+.Information {
+  padding: 0 20px;
+}
+
+.cards h1, .cards h3, .cards h4 {
   margin-top: 1rem;
   padding-top: 10px;
-  padding: 0 20px;
 }
 
 .cards p {
   height: auto;
-  padding: 0 20px;
   padding-bottom: 20px;
 }
 
 .cards h2 {
   position: absolute;
   color: white;
-  background-color: rgb(14, 185, 134, .8);
+  background-color: rgba(14, 185, 134, 0.8);
   border-radius: 20px 0px 20px 0px;
   padding: 10px 30px;
 }
@@ -386,9 +390,8 @@
   padding: 10px 30px;
   font-size: 1.1rem;
   font-weight: 900;
-  margin: 2rem 3rem;
-  
-
+  margin-top: auto;
+  margin-bottom: 2rem;
 }
 
 button:hover {
@@ -396,6 +399,107 @@ button:hover {
   transition: .2s ease-in;
 }
 
+/* Responsive Layout */
+
+@media (max-width: 1200px) {
+  .cards {
+      width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards {
+      width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .cards {
+      width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards {
+      width: 90%;
+  }
+}
+
+/* MEMBERSHIP SECTION */
+
+/* SUBSCRIBE FORM */
+.subscribe-form-container {
+  background-color: #0eb986;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+}
+
+.subscribe-form {
+  padding: 2rem;
+  border-radius: 8px;
+ color: whte;
+  max-width: 800px;
+  width: 100%;
+  line-height: 2rem;
+}
+
+.subscribe-form h2 {
+  margin-top: 1.5rem 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.subscribe-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+  background-color: #0eb986;
+}
+
+.subscribe-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  background-color: white; /* Green color */
+  color: #0eb986;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+}
+
+.subscribe-form button:hover {
+  background-color: #23906F; /* Darker green on hover */
+  color: white;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+  
+  
+}
 
 
 
